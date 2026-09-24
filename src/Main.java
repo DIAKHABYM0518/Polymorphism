@@ -38,7 +38,7 @@
 
         System.out.println("______________________________");
         for (int j = 2; j<10; j++) {
-            members[j] = new BSU_Member();
+            members[j] = new BSU_Member() ;
         }
 
         System.out.println("______________________________");

@@ -14,6 +14,38 @@
 
         COSC214.display_course_information();
         section2.display_course_information();
+
+        //Student object
+        Student arturo = new Student();
+        Course math141 = new Course();
+        Course frac = new Course();
+        Course cosc107 = new Course();
+        Course engl102 = new Course();
+        Course soc101 = new Course();
+
+        arturo.enrolled_courses[0] = math141;
+        // Lab work: Populate index 1 to 4 with the other course references
+
+        BSU_Member []members = new BSU_Member[10];
+
+        BSU_Member b1, b2;
+        //Creating an object of student type and string the reference in a BSU Member type variable
+        b1 = new Student();
+        b2 = new Instructor();
+
+        members[0] = b1;
+        members[1] = b2;
+
+        System.out.println("______________________________");
+        for (int j = 2; j<10; j++) {
+            members[j] = new BSU_Member();
+        }
+
+        System.out.println("______________________________");
+        for (int j = 0; j<10; j++) {
+            members[j].display_information();
+        }
+
        }
     }
 
